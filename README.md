@@ -1,4 +1,4 @@
-# horror-house
+# horror-house (Checkpoint 4)
 A web application to learn about horror house and book a ticket for a visit.
 
 # User Stories
