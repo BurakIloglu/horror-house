@@ -1,42 +1,81 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
+  margin: 0;
+  background-color: lightpink;
 }
 
 .nav {
-    background-color: #672f66;
-    color: red;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 3rem;
+  background-color: #672f66;
+  color: red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3rem;
+  height: 60px;
 }
 
 .site-name {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 .nav ul {
-    padding: 0;
-    margin: 5;
-    list-style: none;
-    display: flex;
-    gap: 2rem;
-
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 2rem;
 }
 
 .nav a {
-    color: red;
-    text-decoration: none;
-    font-family: Caprice;
-    height: 100%;
-    display: flex;
-    align-items: center;
+  color: red;
+  text-decoration: none;
+  font-family: Caprice;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.nav li {
+  line-height: 60px;
+  padding: 0 10px;
 }
 
 .nav li.active {
-    background-color: #c44c7d;
+  background-color: lightpink;
+}
+.nav li.active a {
+  cursor: initial;
+}
+
+.nav li:not(.active):hover {
+  background-color: lightpink;
+  transition: 0.3s ease all;
+}
+
+.welcome-text {
+  background-image: url("./pictures/Spooky-Photo-with-Moody-Atmosphere-for-Halloween-by-Sarah-Wilkerson-0777-1 2.jpeg");
+  display: flex;
+  justify-content: center;
+  color: red;
+  margin: 0;
+  padding: 0;
+  line-height: 1000px;
+}
+
+.gallery-container {
+  margin: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  background-color: lightpink;
+}
+.gallery-item {
+  flex: calc(25% - 20px);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
